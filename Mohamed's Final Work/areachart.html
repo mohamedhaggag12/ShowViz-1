@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Broadway Season Breakdown</title>
+
+		<!-- Load CSS libraries -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">		
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container-1 row justify-content-center">
+            <label id="filterButton" for="dataFilter">Select Data:</label>
+            <select id="dataFilter">
+                <option value="Gross">Gross</option>
+                <option value="Attendance">Attendance</option>
+                <option value="Capacity">Capacity</option>
+                <option value="Weeks_in_Season">Weeks in Season</option>
+                <option value="Playing_Weeks">Playing Weeks</option>
+                <option value="New_Productions">New Productions</option>
+            </select>
+			<div id="area-chart"></div>
+		</div>
+		<div class="container-2 row justify-content-center">
+			<div class="col-4 align-self-center">
+                <div id="PLAYING_WEEKS"></div>
+			</div>
+            <div class="col-4 align-self-center">
+                <div id="total-attendance"></div>
+            </div>
+            <div class="col-4 align-self-center">
+                <div id="total-gross"></div>
+            </div>
+		</div>
+        <div class="container-2 row justify-content-center">
+            <div class="col-4 align-self-center">
+                <div id="performances"></div>
+            </div>
+            <div class="col-4 align-self-center">
+                <div id="new-shows"></div>
+            </div>
+            <div class="col-4 align-self-center">
+                <div id="avg-paid-admission"></div>
+            </div>
+        </div>
+	</div>
+
+
+
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<!-- own js files -->
+    <script src="js/barchart.js"></script>
+	<script src="js/areachart.js"></script>
+    <script src="js/main.js"></script>
+	</body>
